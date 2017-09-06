@@ -1,13 +1,9 @@
 
 [Research](research.md) [Talks](talks.md) [Publications](publications.md)
 
-<hline>
-
 <p><img src="https://i1.rgstatic.net/ii/profile.image/AS%3A272394916986909%401441955417976_l/Florian_Beutler.png"
-alt="IMAGE OF FLORIAN BEUTLER" width="170" align="left" style="border:10px;padding:10px">Hi there! I am Florian Beutler, a researcher at the Institute for Cosmology and Gravitation in Portsmouth, UK. I am working in the fields of cosmology, statistical analysis and machine learning. Broadly speaking, I test models of the Universe using data collected with satellites and telescopes.</p>
+alt="IMAGE OF FLORIAN BEUTLER" width="170" align="left" border:10px; style="padding:10px">Hi there! I am Florian Beutler, a researcher at the Institute for Cosmology and Gravitation in Portsmouth, UK. I am working in the fields of cosmology, statistical analysis and machine learning. Broadly speaking, I test models of the Universe using data collected with satellites and telescopes.</p>
 
 Undergraduate/graduate students: If you are looking for a project feel free to email me. I have have project suitable for PhD as well as short term internships. My projects range from cosmological data analysis to theoretical work on optimal statistical estimators as well as computer science/machine learning. Experience in any of those is a plus but not a requirement.
 
-<hline>
-
-[contact](contact.md)
+[Contact](contact.md)
