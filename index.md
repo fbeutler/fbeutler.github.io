@@ -1,5 +1,3 @@
-![Image of Florian Beutler](0 | width=100)
-
 <a href="https://avatars0.githubusercontent.com/u/10950512?v=4&u=95429ac36ffcd5986631a2e1fad2eec873adc027&s=40" 
 alt="IMAGE OF FLORIAN BEUTLER" width="240" border="10" /></a>
 
