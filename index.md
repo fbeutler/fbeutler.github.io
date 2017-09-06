@@ -1,6 +1,5 @@
-<navbar>
+
 [Research](research.md) [Talks](talks.md) [Publications](publications.md)
-</navbar>
 
 <hline>
 
