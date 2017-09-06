@@ -6,4 +6,4 @@ alt="IMAGE OF FLORIAN BEUTLER" width="170" align="left" border="10" style="paddi
 
 Undergraduate/graduate students: If you are looking for a project feel free to email me. I have have project suitable for PhD as well as short term internships. My projects range from cosmological data analysis to theoretical work on optimal statistical estimators as well as computer science/machine learning. Experience in any of those is a plus but not a requirement.
 
-[Contact](contact.md)
+<a href="contact.md">Contact</a>
