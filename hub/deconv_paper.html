@@ -4,12 +4,12 @@ title: Some material
 ---
 <div>
     <li>
-      <a onclick="increment('M1')">
-	      M(ko,kth) for BOSS DR12 NGC z1</a><div id='M1count'></div>
+      <a href='#' onclick="increment('M1')">
+	      M(ko,kth) for BOSS DR12 NGC z1</a><div id='M1count' style='display:inline'></div>
     </li>
     
     <script type='text/javascript'>
-	    document.getElementById('M1count').innerHTML = localStorage.getItem(string);
+	    document.getElementById('M1count').innerHTML = localStorage.getItem('M1');
 	    function increment(string) {
 		// get the saved value or zero if not found
         	var count = localStorage.getItem(string) || 0;
