@@ -9,7 +9,7 @@ title: Some material
     </li>
     
     <script type='text/javascript'>
-	    document.getElementById('M1count').innerHTML = localStorage.getItem('M1');
+	    document.getElementById('M1count').innerHTML = '(download counter: ' + localStorage.getItem('M1') + ')';
 	    function increment(string) {
 		// get the saved value or zero if not found
         	var count = localStorage.getItem(string) || 0;
