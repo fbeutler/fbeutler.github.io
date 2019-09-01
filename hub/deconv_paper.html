@@ -4,33 +4,23 @@ title: Some material
 ---
 <div>
     <li>
-      <a href="M2D_pk_BOSS_DR12_NGC_z1_1_1_1_1_1_10_1.dat" target="_explorer.exe">M(ko,kth) for BOSS DR12 NGC z1</a>
-    </li>
+      <a href="M2D_pk_BOSS_DR12_NGC_z1_1_1_1_1_1_10_1.dat" target="_explorer.exe" onclick="increment('M1'); return false;">M(ko,kth) for BOSS DR12 NGC z1</a>
+    </li><div id='M1count'></div>
     
-    <button id="download-btn" type="button">Download</button>
-<div id="show-count"></div>
-    
-    [quicklink link="https://downloadlink.com/files.zip" content="download"]
-    
-    // Link button
-function quicklinkbutton( $atts) {
-    extract(shortcode_atts(array( 
-                'link' 		=> '',
-                'content'	=>'',
-				'a' 		=> "'"               
-                ), $atts));
-    $html = '<a href='.$atts["link"].' id="download-btn" download>';
-	$html .= '<div id="show-count"></div>';
-	return $html;
-}
-add_shortcode( 'quicklink', 'quicklinkbutton' );
-    
-jQuery( document ).ready( function() {
-	jQuery('#download-btn').click(function() {
-	    jQuery('#show-count').html(function(i, val) {
-	    	return val*1+1 
-	   	});
-	});
-});
+    <script type='text/javascript'>
+	    function increment(string) {
+		// get the saved value or zero if not found
+        	var count = localStorage.getItem(string) || 0;
+
+        	// increment the value by 1
+        	count++;
+
+        	// save the value
+        	localStorage.setItem(string, count);
+
+        	// show the actual value
+        	document.getElementById(string+'count').innerHTML = count
+	    }
+    </script>
     
 </div><br>
