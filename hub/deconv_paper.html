@@ -4,10 +4,12 @@ title: Some material
 ---
 <div>
     <li>
-      <a href="M2D_pk_BOSS_DR12_NGC_z1_1_1_1_1_1_10_1.dat" target="_explorer.exe" onclick="increment('M1'); return false;">M(ko,kth) for BOSS DR12 NGC z1</a>
-    </li><div id='M1count'></div>
+      <a onclick="increment('M1')">
+	      M(ko,kth) for BOSS DR12 NGC z1</a><div id='M1count'></div>
+    </li>
     
     <script type='text/javascript'>
+	    document.getElementById('M1count').innerHTML = localStorage.getItem(string);
 	    function increment(string) {
 		// get the saved value or zero if not found
         	var count = localStorage.getItem(string) || 0;
@@ -19,7 +21,10 @@ title: Some material
         	localStorage.setItem(string, count);
 
         	// show the actual value
-        	document.getElementById(string+'count').innerHTML = count
+        	document.getElementById(string+'count').innerHTML = count;
+		var link = document.createElement("a");
+                link.href = "M2D_pk_BOSS_DR12_NGC_z1_1_1_1_1_1_10_1.dat";
+                link.click();
 	    }
     </script>
     
