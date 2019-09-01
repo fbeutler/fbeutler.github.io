@@ -9,7 +9,7 @@ title: Some material
     </li>
     
     <script type='text/javascript'>
-	    document.getElementById('M1count').innerHTML = '(download counter: ' + localStorage.getItem('M1') + ')';
+	    document.getElementById('M1count').innerHTML = '  (download counter: ' + localStorage.getItem('M1') + ')';
 	    function increment(string) {
 		// get the saved value or zero if not found
         	var count = localStorage.getItem(string) || 0;
@@ -21,7 +21,7 @@ title: Some material
         	localStorage.setItem(string, count);
 
         	// show the actual value
-        	document.getElementById(string+'count').innerHTML = count;
+        	document.getElementById(string+'count').innerHTML = '  (download counter: ' + localStorage.getItem('M1') + ')';
 		var link = document.createElement("a");
                 link.href = "M2D_pk_BOSS_DR12_NGC_z1_1_1_1_1_1_10_1.dat";
                 link.click();
