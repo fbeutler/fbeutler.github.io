@@ -13,7 +13,7 @@ title: Some material
 	
     Products with \Delta k_o = 0.01h/Mpc, \Delta k_{th} = 0.01h/Mpc, meaning the wide-angle transformation 
 	    matrix M has the shape 120 x 200, the window function has the shape 200 x 200 and the 
-	    covariance matrix has the shape 200 x 200:<br> <br> 
+	    covariance matrix has the shape 200 x 200:<br>
 	    
     <li>
         <a href="M_6dFGS_DR3_1_1_1_1_1_120_200.matrix.gz">M(kth,kth)</a>
@@ -24,7 +24,7 @@ title: Some material
 	    
     Products with \Delta k_o = 0.01h/Mpc, \Delta k_{th} = 0.01h/Mpc, meaning the wide-angle transformation 
 	    matrix M has the shape 1200 x 2000, the window function has the shape 2000 x 200 and the 
-	    covariance matrix has the shape 200 x 200:<br> <br> 
+	    covariance matrix has the shape 200 x 200:<br> 
 	    
     <li>
 	<a href="M_6dFGS_DR3_1_1_1_1_1_1200_2000.matrix.gz">M(kth,kth)</a>
@@ -111,38 +111,63 @@ title: Some material
   </tr>
 </table>
 	    
-    <h4>eBOSS DR14</h4>
+    <h4>eBOSS DR16 QSO</h4>
 	    
-	    When using any of the products based on the eBOSS DR14 sample, please cite the corresponding data release paper (Abolfathi et al. 
-	    Astrophysical Journal.235 2018, Arxiv:1707.09322).<br><br>
+	    When using any of the products based on the eBOSS DR14 sample, please cite the corresponding data release paper 
+	    (<a href="https://arxiv.org/abs/1912.02905" target="_blank">Ahumada et al., arxiv:1912.02905</a>).<br><br>
 
-    <b>Wide-angle transformation matrix and window matrix with \Delta k_o = 0.01h/Mpc, \Delta k_{th} = 0.01h/Mpc:</b><br>
-    <li>
-        NGC: <a href="M2D_pk_eBOSS_DR14_QSO_NGC_1_1_1_1_1_10_1.dat">M(kth,kth)</a> -> 120 x 200 bins
-    </li>
-    <li>
-        NGC: <a href="W2D_pk_eBOSS_DR14_QSO_NGC_1_1_1_1_1_10_1.dat">W(ko,kth)</a> -> 200 x 200 bins
-    </li><br>
-    <li>
-        SGC: <a href="M2D_pk_eBOSS_DR14_QSO_SGC_1_1_1_1_1_10_1.dat">M(kth,kth)</a> -> 120 x 200 bins
-    </li>
-    <li>
-        SGC: <a href="W2D_pk_eBOSS_DR14_QSO_SGC_1_1_1_1_1_10_1.dat">W(ko,kth)</a> -> 200 x 200 bins
-    </li><br>
+    Products with \Delta k_o = 0.01h/Mpc, \Delta k_{th} = 0.01h/Mpc, meaning the wide-angle transformation 
+	    matrix M has the shape 1200 x 200, the window function has the shape 200 x 200 and the 
+	    covariance matrix has the shape 200 x 200:<br> <br>     
 	    
-    <b>Wide-angle transformation matrix and window matrix with \Delta k_o = 0.01h/Mpc, \Delta k_{th} = 0.001h/Mpc:</b><br>
-    <li>
-	NGC: <a href="M2D_pk_eBOSS_DR14_QSO_NGC_1_1_1_1_1_10_10.dat">M(kth,kth)</a> -> 1200 x 2000 bins
-    </li>
-    <li>
-	NGC: <a href="W2D_pk_eBOSS_DR14_QSO_NGC_1_1_1_1_1_10_10.dat">W(ko,kth)</a> -> 2000 x 200 bins
-    </li><br>    
-    
-    <li>
-	SGC: <a href="M2D_pk_eBOSS_DR14_QSO_SGC_1_1_1_1_1_10_10.dat">M(kth,kth)</a> -> 1200 x 2000 bins
-    </li>
-    <li>
-	SGC: <a href="W2D_pk_eBOSS_DR14_QSO_SGC_1_1_1_1_1_10_10.dat">W(ko,kth)</a> -> 2000 x 200 bins
-    </li>
+<table style="width:100%">
+  <tr style="text-align: left">
+    <th></th>
+    <th>QSO NGC</th>
+    <th>QSO SGC</th> 
+  </tr>
+  <tr style="text-align: left">
+    <td><b>M(kth,kth)</b></td>
+    <td><a href="M_eBOSS_DR16_NGC_1_1_1_1_1_120_200.matrix.gz">M(kth,kth)</a></td>
+    <td><a href="M_eBOSS_DR16_SGC_1_1_1_1_1_120_200.matrix.gz">M(kth,kth)</a></td> 
+  </tr>
+  <tr style="text-align: left">
+    <td><b>W(ko,kth)</b></td>
+    <td><a href="W_eBOSS_DR16_NGC_1_1_1_1_1_10_200_200.matrix.gz">W(ko,kth)</a></td>
+    <td><a href="W_eBOSS_DR16_SGC_1_1_1_1_1_10_200_200.matrix.gz">W(ko,kth)</a></td>
+  </tr>
+  <tr style="text-align: left">
+    <td><b>C(ko,ko)</b></td>
+    <td><a href="C_1000_eBOSS_DR16_NGC_1_1_1_1_1_10_200_200.matrix.gz">C(ko,ko)</a></td>
+    <td><a href="C_1000_eBOSS_DR16_SGC_1_1_1_1_1_10_200_200.matrix.gz">C(ko,ko)</a></td>
+  </tr>
+</table>
+	    
+    Products with \Delta k_o = 0.01h/Mpc, \Delta k_{th} = 0.001h/Mpc, meaning the wide-angle transformation 
+	    matrix M has the shape 1200 x 2000, the window function has the shape 2000 x 200 and the 
+	    covariance matrix has the shape 200 x 200:<br> <br> 
+	    
+<table style="width:100%">
+  <tr style="text-align: left">
+    <th></th>
+    <th>QSO NGC</th>
+    <th>QSO SGC</th> 
+  </tr>
+  <tr style="text-align: left">
+    <td><b>M(kth,kth)</b></td>
+    <td><a href="M_eBOSS_DR16_NGC_1_1_1_1_1_1200_2000.matrix.gz">M(kth,kth)</a></td>
+    <td><a href="M_eBOSS_DR16_SGC_1_1_1_1_1_1200_2000.matrix.gz">M(kth,kth)</a></td> 
+  </tr>
+  <tr style="text-align: left">
+    <td><b>W(ko,kth)</b></td>
+    <td><a href="W_eBOSS_DR16_NGC_1_1_1_1_1_10_2000_200.matrix.gz">W(ko,kth)</a></td>
+    <td><a href="W_eBOSS_DR16_SGC_1_1_1_1_1_10_2000_200.matrix.gz">W(ko,kth)</a></td>
+  </tr>
+  <tr style="text-align: left">
+    <td><b>C(ko,ko)</b></td>
+    <td><a href="C_1000_eBOSS_DR16_NGC_1_1_1_1_1_10_200_200.matrix.gz">C(ko,ko)</a></td>
+    <td><a href="C_1000_eBOSS_DR16_SGC_1_1_1_1_1_10_200_200.matrix.gz">C(ko,ko)</a></td>
+  </tr>
+</table>
     
 </div><br>
