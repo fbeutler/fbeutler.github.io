@@ -28,38 +28,46 @@ title: Some material
 	    
     <h4>BOSS DR12</h4>
 	   
-    When using any of the products based on the BOSS DR12 sample, please cite the corresponding data release paper 
-	    (<a href="https://arxiv.org/abs/1509.06529">Reid et al. 
-    MNRAS.455 2016, Arxiv:1509.06529</a>).<br><br>
+    When using any of the products based on the BOSS DR12 sample, please cite the data release 12 paper 
+	    (<a href="http://dx.doi.org/10.1088/0067-0049/219/1/12" target="_blank">Alam et al. APJ, 219, 12 (2015)</a>) and 
+	    the associated catalog paper
+	    (<a href="http://dx.doi.org/10.1093/mnras/stv2382" target="_blank">Reid et al. 
+    MNRAS, 455 2016</a>).<br><br>
 	
-    <b>Wide-angle transformation matrix and window matrix with \Delta k_o = 0.01h/Mpc, \Delta k_{th} = 0.01h/Mpc:</b><br>
-    <li>
-        NGC z1: <a href="M2D_pk_BOSS_DR12_NGC_z1_1_1_1_1_1_10_1.dat">M(kth,kth)</a> -> 120 x 200 bins
-    </li>
-    <li>
-        NGC z1: <a href="W2D_pk_BOSS_DR12_NGC_z1_1_1_1_1_1_10_1.dat">W(ko,kth)</a> -> 200 x 200 bins
-    </li><br>
- 
-    <li>
-        NGC z3: <a href="M2D_pk_BOSS_DR12_NGC_z3_1_1_1_1_1_10_1.dat">M(kth,kth)</a> -> 120 x 200 bins
-    </li>
-    <li>
-        NGC z3: <a href="W2D_pk_BOSS_DR12_NGC_z3_1_1_1_1_1_10_1.dat">W(ko,kth)</a> -> 200 x 200 bins
-    </li><br>
+    Products with \Delta k_o = 0.01h/Mpc, \Delta k_{th} = 0.01h/Mpc, meaning the wide-angle transformation 
+	    matrix M has the shape 120 x 200, the window function has the shape 200 x 200 and the 
+	    covariance matrix has the shape 200 x 200:<br> <br> 
 	    
-    <li>
-        SGC z1: <a href="M2D_pk_BOSS_DR12_SGC_z1_1_1_1_1_1_10_1.dat">M(kth,kth)</a> -> 120 x 200 bins
-    </li>
-    <li>
-        SGC z1: <a href="W2D_pk_BOSS_DR12_SGC_z1_1_1_1_1_1_10_1.dat">W(ko,kth)</a> -> 200 x 200 bins
-    </li><br>
-	    
-    <li>
-        SGC z3: <a href="M2D_pk_BOSS_DR12_SGC_z3_1_1_1_1_1_10_1.dat">M(kth,kth)</a> -> 120 x 200 bins
-    </li>
-    <li>
-        SGC z3: <a href="W2D_pk_BOSS_DR12_SGC_z3_1_1_1_1_1_10_1.dat">W(ko,kth)</a> -> 200 x 200 bins
-    </li><br>
+<table style="width:100%">
+  <tr style="text-align: left">
+    <th></th>
+    <th>NGC z1</th>
+    <th>SGC z1</th> 
+    <th>NGC z3</th> 
+    <th>SGC z3</th>
+  </tr>
+  <tr style="text-align: left">
+    <td><b>M(ko,kth)</b></td>
+    <td><a href="M_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_120_200.matrix.gz">M(kth,kth)</a></td>
+    <td><a href="M_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_120_200.matrix.gz">M(kth,kth)</a></td> 
+    <td><a href="M_BOSS_DR12_NGC_z3_V6C_1_1_1_1_1_120_200.matrix.gz">M(kth,kth)</a></td>
+    <td><a href="M_BOSS_DR12_SGC_z3_V6C_1_1_1_1_1_120_200.matrix.gz">M(kth,kth)</a></td>
+  </tr>
+  <tr style="text-align: left">
+    <td><b>W(ko,kth)</b></td>
+    <td><a href="W_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_10_200_200.matrix.gz">W(ko,kth)</a></td>
+    <td><a href="W_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_10_200_200.matrix.gz">W(ko,kth)</a></td>
+    <td><a href="W_BOSS_DR12_NGC_z3_V6C_1_1_1_1_1_10_200_200.matrix.gz">W(ko,kth)</a></td>
+    <td><a href="W_BOSS_DR12_SGC_z3_V6C_1_1_1_1_1_10_200_200.matrix.gz">W(ko,kth)</a></td>
+  </tr>
+  <tr style="text-align: left">
+    <td><b>C(ko,ko)</b></td>
+    <td><a href="C_2048_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_10_200_200.matrix.gz">C(ko,ko)</a></td>
+    <td><a href="C_2048_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_10_200_200.matrix.gz">C(ko,ko)</a></td>
+    <td><a href="C_2048_BOSS_DR12_NGC_z3_V6C_1_1_1_1_1_10_200_200.matrix.gz">C(ko,ko)</a></td>
+    <td><a href="C_2048_BOSS_DR12_SGC_z3_V6C_1_1_1_1_1_10_200_200.matrix.gz">C(ko,ko)</a></td>
+  </tr>
+</table>
 	    
     Products with \Delta k_o = 0.01h/Mpc, \Delta k_{th} = 0.001h/Mpc, meaning the wide-angle transformation 
 	    matrix M has the shape 1200 x 2000, the window function has the shape 2000 x 200 and the 
