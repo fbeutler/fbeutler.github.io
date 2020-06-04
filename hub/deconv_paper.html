@@ -28,65 +28,78 @@ Finally, when using any of the products based on the eBOSS DR16 sample, please c
 	    covariance matrix has the shape 200 x 200. The power spectra are measured in smaller bins of \Delta k_o = 0.001h/Mpc
 	and one needs to combine 10 bins so that these power spectra can be used with the other products (see combine_bins 
 	parameter in <a href="https://github.com/fbeutler/pk_tools/blob/master/pk_tools.py" target="_blank">read_power()</a>):<br> <br> 
-	    
-<table style="width:100%">
-  <tr style="text-align: left">
-    <td></td>
-    <th>6dFGS DR12</th>
+	
+	
+	    <th>6dFGS DR12</th>
     <th>BOSS DR12 NGC z1</th>
     <th>BOSS DR12 SGC z1</th> 
     <th>BOSS DR12 NGC z3</th> 
     <th>BOSS DR12 SGC z3</th>
     <th>eBOSS DR16 QSO NGC</th> 
     <th>eBOSS DR16 QSO SGC</th>
+	
+<table style="width:100%">
+  <tr style="text-align: left">
+    <th></th>
+    <th><b>M</b></th>
+    <th>W</th> 
+    <th>C</th>
+    <th>Mock P(k)</th>
+    <th>Data P(k)<br>\Delta k_o = 0.001h/Mpc</th>
   </tr>
   <tr style="text-align: left">
-    <td>1200x2000</td>
+    <td>6dFGS DR12</td>
     <td><a href="M_6dFGS_DR3_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
-    <td><a href="M_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
-    <td><a href="M_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_1200_2000.matrix.gz">M</a></td> 
-    <td><a href="M_BOSS_DR12_NGC_z3_V6C_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
-    <td><a href="M_BOSS_DR12_SGC_z3_V6C_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
-    <td><a href="M_eBOSS_DR16_QSO_NGC_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
-    <td><a href="M_eBOSS_DR16_QSO_SGC_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
-  </tr>
-  <tr style="text-align: left">
-    <td>2000x200</td>
     <td><a href="W_6dFGS_DR3_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
-    <td><a href="W_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
-    <td><a href="W_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
-    <td><a href="W_BOSS_DR12_NGC_z3_V6C_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
-    <td><a href="W_BOSS_DR12_SGC_z3_V6C_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
-    <td><a href="W_eBOSS_DR16_QSO_NGC_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
-    <td><a href="W_eBOSS_DR16_QSO_SGC_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
-  </tr>
-  <tr style="text-align: left">
-    <td>200x200</td>
     <td><a href="C_600_6dFGS_DR3_1_1_1_1_1_10_200_200.matrix.gz">C</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+  </tr>
+  <tr style="text-align: left">
+    <td>BOSS DR12 NGC z1</td>
+    <td><a href="M_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
+    <td><a href="W_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
     <td><a href="C_2048_BOSS_DR12_NGC_z1_V6C_1_1_1_1_1_10_200_200.matrix.gz">C</a></td>
-    <td><a href="C_2048_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_10_200_200.matrix.gz">C</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+  </tr>
+  <tr style="text-align: left">
+    <td>BOSS DR12 NGC z3</td>
+    <td><a href="M_BOSS_DR12_NGC_z3_V6C_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
+    <td><a href="W_BOSS_DR12_NGC_z3_V6C_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
     <td><a href="C_2048_BOSS_DR12_NGC_z3_V6C_1_1_1_1_1_10_200_200.matrix.gz">C</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+  </tr>
+  <tr style="text-align: left">
+    <td>BOSS DR12 SGC z1</td>
+    <td><a href="M_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
+    <td><a href="W_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
+    <td><a href="C_2048_BOSS_DR12_SGC_z1_V6C_1_1_1_1_1_10_200_200.matrix.gz">C</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+  </tr>
+  <tr style="text-align: left">
+    <td>BOSS DR12 SGC z3</td>
+    <td><a href="M_BOSS_DR12_SGC_z3_V6C_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
+    <td><a href="W_BOSS_DR12_SGC_z3_V6C_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
     <td><a href="C_2048_BOSS_DR12_SGC_z3_V6C_1_1_1_1_1_10_200_200.matrix.gz">C</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+  </tr>
+  <tr style="text-align: left">
+    <td>eBOSS DR16 QSO NGC</td>
+    <td><a href="M_eBOSS_DR16_QSO_NGC_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
+    <td><a href="W_eBOSS_DR16_QSO_NGC_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
     <td><a href="C_1000_eBOSS_DR16_QSO_NGC_1_1_1_1_1_10_200_200.matrix.gz">C</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+    <td><a href="X.tar.gz">P</a></td>
+  </tr>
+  <tr style="text-align: left">
+    <td>eBOSS DR16 QSO SGC</td>
+    <td><a href="M_eBOSS_DR16_QSO_SGC_1_1_1_1_1_1200_2000.matrix.gz">M</a></td>
+    <td><a href="W_eBOSS_DR16_QSO_SGC_1_1_1_1_1_10_2000_200.matrix.gz">W</a></td>
     <td><a href="C_1000_eBOSS_DR16_QSO_SGC_1_1_1_1_1_10_200_200.matrix.gz">C</a></td>
-  </tr>
-  <tr style="text-align: left">
-    <td>Mocks:</td>
-    <td><a href="X.tar.gz">P</a></td>
-    <td><a href="X.tar.gz">P</a></td>
-    <td><a href="X.tar.gz">P</a></td>
-    <td><a href="X.tar.gz">P</a></td>
-    <td><a href="X.tar.gz">P</a></td>
-    <td><a href="X.tar.gz">P</a></td>
-    <td><a href="X.tar.gz">P</a></td>
-  </tr>
-  <tr style="text-align: left">
-    <td>Data:</td>
-    <td><a href="X.tar.gz">P</a></td>
-    <td><a href="X.tar.gz">P</a></td>
-    <td><a href="X.tar.gz">P</a></td>
-    <td><a href="X.tar.gz">P</a></td>
-    <td><a href="X.tar.gz">P</a></td>
     <td><a href="X.tar.gz">P</a></td>
     <td><a href="X.tar.gz">P</a></td>
   </tr>
