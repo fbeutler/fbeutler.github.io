@@ -29,6 +29,13 @@ Finally, when using any of the products based on the eBOSS DR16 sample, please c
 	and one needs to combine 10 bins so that these power spectra can be used with the other products (see combine_bins 
 	parameter in <a href="https://github.com/fbeutler/pk_tools/blob/master/pk_tools.py" target="_blank">read_power()</a>):<br> <br> 
 	
+	To be used as 
+	$$
+	\mathcal{L} \propto \exp\left[-\frac{1}{2}(\bold{P}^{\rm conv}_o - \bold{W}\bold{M}\bold{P}^{\rm true})C^{-1}(\bold{P}^{\rm conv}_o - \bold{W}\bold{M}\bold{P}^{\rm true})\right]
+	$$
+	where \(\bold{P}^{\rm true}\) is a vector of monopole, quadrupole and hexadecapole models (no wide-angle effects) and
+	\(\bold{P}^{\rm conv}_{\rm o}\) is the vector of measured power spectrum monopole, dipole, quadrupole, octopole and hexadecapole.
+	
 <table style="width:100%">
   <tr style="text-align: center">
     <th></th>
