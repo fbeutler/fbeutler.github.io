@@ -46,7 +46,7 @@ Finally, when using any of the products based on the eBOSS DR16 sample, please c
 	to 5 multipoles with binniung \(\Delta k_o\)</td>
   </tr>
   <tr style="text-align: left">
-    <td>\(\textbf{C}\)</td>
+    <td>\(\textbf{C}_{\rm conv}\)</td>
     <td style="min-width:100px">2000 x 200</td>
     <td><b>Covariance matrix:</b> For 5 multipoles in the k-range \(0 - 0.4h/\)Mpc in bins of \(\Delta k_{o}\)</td>
   </tr>
@@ -54,19 +54,21 @@ Finally, when using any of the products based on the eBOSS DR16 sample, please c
     <td style="min-width:60px">Mock \(\mathbf{P}^{\rm conv}_{\rm o}\)</td>
     <td style="min-width:100px">400</td>
     <td><b>Mock power spectrum multipoles:</b> Mock power spectrum multipoles in the k-range \(0 - 0.4h/\)Mpc in bins 
-	    of \(\Delta k = 0.001h/\)Mpc</td>
+	    of \(\Delta k = 0.001h/\)Mpc. You need to combine 10 bins so that these power spectra can be used with the 
+	    other products (see combine_bins 
+	parameter in <a href="https://github.com/fbeutler/pk_tools/blob/master/pk_tools.py" target="_blank">read_power()</a>).</td>
   </tr>
   <tr style="text-align: left">
     <td style="min-width:60px">Data \(\mathbf{P}^{\rm conv}_{\rm o}\)</td>
     <td style="min-width:100px">400</td>
     <td><b>Data power spectrum multipoles:</b> Data power spectrum multipoles in the k-range \(0 - 0.4h/\)Mpc in bins 
-	    of \(\Delta k = 0.001h/\)Mpc</td>
+	    of \(\Delta k = 0.001h/\)Mpc. You need to combine 10 bins so that these power spectra can be used with the 
+	    other products (see combine_bins 
+	parameter in <a href="https://github.com/fbeutler/pk_tools/blob/master/pk_tools.py" target="_blank">read_power()</a>).</td>
   </tr>
 </table><br>
 	
-	The power spectra are measured in smaller bins of \(\Delta k_o = 0.001h/\)Mpc
-	and one needs to combine 10 bins so that these power spectra can be used with the other products (see combine_bins 
-	parameter in <a href="https://github.com/fbeutler/pk_tools/blob/master/pk_tools.py" target="_blank">read_power()</a>):<br> <br> 
+	<br> <br> 
 	
 	To be used as 
 	$$
