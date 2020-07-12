@@ -26,8 +26,8 @@ Finally, when using any of the products based on the eBOSS DR16 sample, please c
 	    (<a href="#" target="_blank">Ross et al., arxiv:X</a>).<br><br>
 	
     The following products use \(\Delta k_{\rm o} = 0.01h/\)Mpc, \(\Delta k_{\rm th} = 0.001h/\)Mpc, meaning the wide-angle transformation 
-	    matrix, \(\mathbf{M}\), has the shape 1200 x 2000, the window function matrix, \(\mathbf{W}\), has the shape 2000 x 200 and the 
-	    covariance matrix, \(\mathbf{C}\), has the shape 200 x 200. 
+	    matrix, \(\mathbf{M}\), has the shape 1200 x 2000, the window function matrix, \(\mathbf{W}\), has the shape \(2000 \times 200\) and the 
+	    covariance matrix, \(\mathbf{C}\), has the shape \(200 \times 200\). 
 	
 <table style="width:100%;padding-top:20px">
   <tr style="text-align: left">
@@ -37,25 +37,25 @@ Finally, when using any of the products based on the eBOSS DR16 sample, please c
   </tr>
   <tr style="text-align: left">
     <td>\(\textbf{M}\)</td>
-    <td style="min-width:100px">2000 x 1200</td>
+    <td style="min-width:100px">\(2000 \times 1200\)</td>
     <td><b>Wide-angle transformation matrix:</b> Transforms from 3 multipoles in the k-range \(0 - 0.4h/\)Mpc in bins of \(\Delta k_{\rm th}= 0.001h/\)Mpc 
 	to 5 multipoles with the same binning</td>
   </tr>
   <tr style="text-align: left">
     <td>\(\textbf{W}\)</td>
-    <td style="min-width:100px">200 x 2000</td>
+    <td style="min-width:100px">\(200 \times 2000\)</td>
     <td><b>Window function matrix:</b> Transforms from 5 multipoles in the k-range \(0 - 0.4h/\)Mpc in bins of \(\Delta k_{\rm th}= 0.001h/\)Mpc 
 	to 5 multipoles with binning \(\Delta k_{\rm o}= 0.01h/\)Mpc. This window matrix should be your default choice when convolving your model power spectrum.</td>
   </tr>
   <tr style="text-align: left">
     <td>\(\textbf{W}\)</td>
-    <td style="min-width:100px">200 x 200</td>
+    <td style="min-width:100px">\(200 \times 200\)</td>
     <td><b>Window function matrix:</b> Transforms from 5 multipoles in the k-range \(0 - 0.4h/\)Mpc in bins of \(\Delta k_{\rm th}= 0.01h/\)Mpc 
 	to 5 multipoles with binning \(\Delta k_{\rm o}= 0.01h/\)Mpc. This window matrix can be used for deconvolution.</td>
   </tr>
   <tr style="text-align: left">
     <td>\(\textbf{C}_{\rm conv}\)</td>
-    <td style="min-width:100px">200 x 200</td>
+    <td style="min-width:100px">\(200 \times 200\)</td>
     <td><b>Covariance matrix:</b> For 5 multipoles in the k-range \(0 - 0.4h/\)Mpc in bins of \(\Delta k_{\rm o}= 0.01h/\)Mpc</td>
   </tr>
   <tr style="text-align: left">
@@ -103,9 +103,9 @@ Finally, when using any of the products based on the eBOSS DR16 sample, please c
   </tr>
   <tr style="text-align: center">
     <th></th>
-    <th>\(\tiny{2000 x 1200}\)</th>
-    <th>\(\tiny{200 x 2000}\)</th> 
-    <th>\(\tiny{200 x 200}\)</th> 
+    <th>\(\tiny{2000 \times 1200}\)</th>
+    <th>\(\tiny{200 \times 2000}\)</th> 
+    <th>\(\tiny{200 \times 200}\)</th> 
     <th>\(\scriptsize{\text{pre-recon}}\)</th>
     <th>\(\scriptsize{\text{post-recon}}\)</th>
     <th>\(\scriptsize{\text{pre-recon}}\)</th>
